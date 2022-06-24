@@ -14,25 +14,22 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="assets/images/header-logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <!-- <span class="sr-only">(current)</span> -->
-                        </a>
+                        <a class="nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
@@ -71,55 +68,55 @@
                             <img src="assets/images/item-01.jpg" alt="Item 1">
                             <h4>Camiseta The Beatles</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-02.jpg" alt="Item 2">
                             <h4>Camiseta Black Sabbath</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-03.jpg" alt="Item 3">
                             <h4>Camiseta Bob Dylan</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-04.jpg" alt="Item 4">
                             <h4>Camiseta Pintura The Beatles</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-05.jpg" alt="Item 5">
                             <h4>Camiseta Blag Flag</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-06.jpg" alt="Item 6">
                             <h4>Camiseta All You Need is Love</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-04.jpg" alt="Item 7">
                             <h4>Camiseta Pintura The Beatles</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-05.jpg" alt="Item 8">
                             <h4>Camiseta Black Flag</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-06.jpg" alt="Item 9">
                             <h4>Camiseta All You Need is Love</h4>
                             <h6>R$ 39,90</h6>
-                            <a href="single-product.html" class="btn-comprar">Comprar</a>
+                            <a href="" rel="produto-1" class="btn-comprar nav-modal-open">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -144,7 +141,7 @@
                                 <div class="row">
                                     <div class="col-md-7">
                                         <fieldset>
-                                            <input name="email" type="text" class="form-control" id="email" value="" placeholder="Seu e-mail...">
+                                            <input name="email" type="email" class="form-control" id="email" value="" placeholder="Seu e-mail..." required>
                                         </fieldset>
                                     </div>
                                     <div class="col-md-5">
@@ -237,7 +234,7 @@
 
             <div class="mb-3">
                 <label for="date" class="form-label">Data</label>
-                <input type="text" name="date" id="date" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpDate">
+                <input type="text" name="date" id="date" class="form-control" placeholder="Digite a data" aria-describedby="helpDate">
                 <small id="helpDate" class="text-muted">Digite uma data válida</small>
             </div>
 
@@ -267,7 +264,6 @@
 
             <button type="submit" class="btn btn-primary">Enviar</button>
 
-
         </form>
 
     </div>
@@ -278,6 +274,13 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
         <br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
+
+    </div>
+
+    <div id="produto-1" class="visually-hidden">
+
+        <b style="color: #fd003b;">Produto esgotado!</b>
+        <p>Desculpe. Avisaremos assim que disponível.</p>
 
     </div>
 

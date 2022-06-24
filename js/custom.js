@@ -41,32 +41,34 @@ $(document).ready(function() {
 
     /*
      * Manipulação de eventos
-     */
-    $('.featured-item a').on('blur', function(event) {
+    
+    $('.featured-item a').on('click', function(event) {
 
         event.preventDefault();
 
-        alert('Produto esgotado');
+        alert('Produto esgotado!!!');
 
     });
+    
+*/
 
-    $('#form-submit').on('click', function(e) {
+    // $('#form-submit').on('click', function(e) {
 
-        e.preventDefault()
+    //     e.preventDefault()
 
-        if ($('#email').val() != '') {
+    //     if ($('#email').val() != '') {
 
-            $('#email').animate({
-                opacity: "toggle",
-                top: "-50"
-            }, 500, function() {
-                console.log($(this).val())
-            })
+    //         $('#email').animate({
+    //             opacity: "toggle",
+    //             top: "-50"
+    //         }, 500, function() {
+    //             console.log($(this).val())
+    //         })
 
-        }
+    //     }
 
 
-    });
+    // });
 
 
     /*
@@ -124,10 +126,11 @@ $(document).ready(function() {
         validate(inputEmail)
 
         if (inputEmail.hasClass('invalid') || inputName.hasClass('invalid')) {
-            console.log('verificar campos obrigatórios')
+            alert('Verificar campos obrigatórios')
             return false
         } else {
-            $(this).submit()
+            $(this).submit();
+            alert('Mensagem enviada com sucesso!')
         }
 
     });
@@ -188,4 +191,10 @@ $(".owl-carousel").owlCarousel({
             items: 3 // from 768 screen width to 1024 8 items
         }
     },
+});
+
+$("#subscribe").submit(function(event) {
+    event.preventDefault();
+
+    alert("Seu e-mail foi cadastrado com sucesso!");
 });
